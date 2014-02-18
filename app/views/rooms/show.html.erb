@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Seat no:</strong>
+  <%= @room.as_json %>
+</p>
+
+<p>
+  <strong>Ticket:</strong>
+  <%= @room.ticket.as_json %>
+</p>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>
